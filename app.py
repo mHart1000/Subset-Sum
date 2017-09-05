@@ -15,11 +15,11 @@ print(target, menu_items, prices)
 
 def subset_sum(numbers, target,	partial=[]):
 	s = sum(partial)
-	# check if the partial sum is equals to target
+	
 	if s == target: 
-		print ("SUCCESS!!!!", partial, target)
+		print (partial, target)
 	if s >= target:
-		return  # if we reach the number why bother to continue
+		return 
 
 	for i in range(len(numbers)):
 		n = numbers[i]
